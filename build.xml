@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="JSON" default="default" basedir="."> 
 
+	<tstamp>
+		<format property="TIME" pattern="dd-mm-yyyy" locale="en,US"/>
+	</tstamp>
+
+	<property name="vendor.author" value="Rafael Grigorian" />
+	<property name="vendor.domain" value="raffi.io" />
+	<property name="vendor.id" value="io.raffi" />
+	<property name="package.class.path" value="io.raffi.JSON" />
+	<property name="package.name" value="io.raffi.JSON" />
+	<property name="package.name.full" value="Java JSON Parser" />
+	<property name="package.version" value="1.0.0" />
+
 	<path id="classpath">
 		<pathelement location="build/classes" />
 	</path>
@@ -27,11 +39,17 @@
 		<mkdir dir="build/jar"/>
 		<jar destfile="build/jar/JSON.jar" basedir="build/classes" >
 			<manifest>
-				<attribute name="Main-Class" value="io.raffi.JSON.Main"/>
-			</manifest>
-			<fileset dir="src/io/raffi/JSON">
-            	<include name="**/*.json" />
-        	</fileset>
+				<attribute name="Created-By" value="${vendor.author}" />
+				<attribute name="Built-By" value="${vendor.author}" />
+                <attribute name="Specification-Title" value="${package.name.full}"/>
+                <attribute name="Specification-Version" value="${package.version}"/>
+                <attribute name="Specification-Ventor" value="${vendor.domain}"/>
+                <attribute name="Implementation-Title" value="${package.name}" />
+                <attribute name="Implementation-Version" value="${package.version} ${TODAY}"/>
+                <attribute name="Implementation-Vendor" value="${vendor.domain}"/>
+                <attribute name="Implementation-Vendor-Id" value="${vendor.id}"/>
+                <attribute name="Class-Path" value="${package.class.path}" />
+            </manifest>
 		</jar>
 	</target>
 
