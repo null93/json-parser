@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="JSON" default="default" basedir="."> 
+
+	<path id="classpath">
+		<pathelement location="build/classes" />
+	</path>
+
+	<target name="clean">
+		<delete dir="build"/>
+		<delete dir="dist"/>
+		<delete>
+    		<fileset dir="src" includes="**/*.class"/>
+    		<fileset dir="." includes="**/*.DS_Store"/>
+		</delete>
+	</target>
+
+	<target name="build">
+		<mkdir dir="build/classes"/>
+		<javac srcdir="src" destdir="build/classes" includeantruntime="false" >  
+			<compilerarg value="-Xlint:unchecked"/> 
+			<compilerarg value="-Xdiags:verbose"/> 
+			<classpath refid="classpath" />
+		</javac>
+	</target>
+
+	<target name="jar" depends="build">
+		<mkdir dir="build/jar"/>
+		<jar destfile="build/jar/JSON.jar" basedir="build/classes" >
+			<manifest>
+				<attribute name="Main-Class" value="io.raffi.JSON.Main"/>
+			</manifest>
+			<fileset dir="src/io/raffi/JSON">
+            	<include name="**/*.json" />
+        	</fileset>
+		</jar>
+	</target>
+
+	<target name="run" depends="jar">
+		<java jar="build/jar/JSON.jar" fork="true" >
+			<classpath refid="classpath" />
+		</java>
+	</target>
+
+</project>

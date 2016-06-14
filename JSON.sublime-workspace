@@ -1,0 +1,1518 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"con",
+				"contains"
+			],
+			[
+				"es",
+				"escaped"
+			],
+			[
+				"res",
+				"resource"
+			],
+			[
+				"JSON",
+				"JSONArray"
+			],
+			[
+				"obje",
+				"object"
+			],
+			[
+				"in",
+				"index"
+			],
+			[
+				"el",
+				"element"
+			],
+			[
+				"e",
+				"enum"
+			],
+			[
+				"stri",
+				"string"
+			],
+			[
+				"strin",
+				"stringValue"
+			],
+			[
+				"inte",
+				"integerValue"
+			],
+			[
+				"dou",
+				"doubleValue"
+			],
+			[
+				"pr",
+				"protected"
+			],
+			[
+				"double",
+				"doubleValue"
+			],
+			[
+				"bool",
+				"booleanValue"
+			],
+			[
+				"st",
+				"string"
+			],
+			[
+				"ex",
+				"export"
+			],
+			[
+				"LEFT",
+				"LEFT_SQUARE"
+			],
+			[
+				"arra",
+				"arrayRecurse"
+			],
+			[
+				"exp",
+				"expecting"
+			],
+			[
+				"Lex",
+				"LexerException"
+			],
+			[
+				"to",
+				"totp"
+			],
+			[
+				"sec",
+				"secretLength"
+			],
+			[
+				"url",
+				"urlencode"
+			],
+			[
+				"save",
+				"saveandprint"
+			],
+			[
+				"dimen",
+				"dimention"
+			],
+			[
+				"iss",
+				"issuer"
+			],
+			[
+				"pin",
+				"pinLength"
+			],
+			[
+				"gener",
+				"generateSecret"
+			],
+			[
+				"base",
+				"base32_encode"
+			],
+			[
+				"chun",
+				"chunk"
+			],
+			[
+				"base_",
+				"base32_encode"
+			],
+			[
+				"error",
+				"error_reporting"
+			],
+			[
+				"pro",
+				"process"
+			],
+			[
+				"ass",
+				"assignedNew"
+			],
+			[
+				"Exe",
+				"ExecuteScalar"
+			],
+			[
+				"eror",
+				"error_log"
+			],
+			[
+				"host",
+				"hostnameOld"
+			],
+			[
+				"ip",
+				"ipsToRemove"
+			],
+			[
+				"A",
+				"Addresses"
+			],
+			[
+				"ipsTo",
+				"ipsToRemove"
+			],
+			[
+				"ips",
+				"ipsToAdd"
+			],
+			[
+				"ded",
+				"dedicatedNew"
+			],
+			[
+				"assi",
+				"assignedNew"
+			],
+			[
+				"hostna",
+				"hostname"
+			],
+			[
+				"updat",
+				"updateFlag"
+			],
+			[
+				"cpa",
+				"cpanelNew"
+			],
+			[
+				"cpan",
+				"cpanelNew"
+			],
+			[
+				"Err",
+				"Errors"
+			],
+			[
+				"hos",
+				"hostnameOld"
+			],
+			[
+				"cp",
+				"cpanelOld"
+			],
+			[
+				"add",
+				"addressesFlag"
+			],
+			[
+				"set",
+				"setOne"
+			],
+			[
+				"se",
+				"setOne"
+			],
+			[
+				"Add",
+				"Addresses"
+			],
+			[
+				"extract",
+				"extractAttribute"
+			],
+			[
+				"erro",
+				"error_log"
+			],
+			[
+				"requi",
+				"require_once"
+			],
+			[
+				"or",
+				"original"
+			],
+			[
+				"http_buil",
+				"http_build_query"
+			],
+			[
+				"cpean",
+				"cpanelLink"
+			],
+			[
+				"Ex",
+				"ExecuteNonScalar"
+			],
+			[
+				"de",
+				"delete"
+			],
+			[
+				"cpanelL",
+				"cpanelLink"
+			],
+			[
+				"licen",
+				"license"
+			],
+			[
+				"address",
+				"addresses"
+			],
+			[
+				"addes",
+				"address"
+			],
+			[
+				"addre",
+				"addresses"
+			],
+			[
+				"Exec",
+				"ExecuteNonQuery"
+			],
+			[
+				"Addre",
+				"Addresses"
+			],
+			[
+				"is_a",
+				"is_array"
+			],
+			[
+				"array_key",
+				"array_key_exists"
+			],
+			[
+				"E",
+				"ExecuteScalar"
+			],
+			[
+				"Men",
+				"MenuShortcut"
+			],
+			[
+				"ou",
+				"outgoingPort"
+			],
+			[
+				"out",
+				"outgoingAddress"
+			],
+			[
+				"clie",
+				"client"
+			],
+			[
+				"Ser",
+				"Server"
+			],
+			[
+				"SERVER",
+				"ServerSocketFactory"
+			],
+			[
+				"server",
+				"serverSocketFactory"
+			],
+			[
+				"send",
+				"sendAll"
+			],
+			[
+				"Server",
+				"ServerSocket"
+			],
+			[
+				"Ehc",
+				"EchoClient"
+			],
+			[
+				"result",
+				"resultPassword"
+			],
+			[
+				"resul",
+				"resultPassword"
+			],
+			[
+				"err",
+				"error_log"
+			],
+			[
+				"P",
+				"_POST"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"cli",
+				"client"
+			],
+			[
+				"Serv",
+				"ServerSocket"
+			],
+			[
+				"pri",
+				"private"
+			],
+			[
+				"his",
+				"History"
+			],
+			[
+				"shor",
+				"shortcut"
+			],
+			[
+				"get",
+				"getValue"
+			],
+			[
+				"CLI",
+				"ClipboardManager"
+			],
+			[
+				"Cl",
+				"Clipboard"
+			],
+			[
+				"clip",
+				"clipboard"
+			],
+			[
+				"cl",
+				"clipboard"
+			],
+			[
+				"men",
+				"menuItem"
+			],
+			[
+				"Clip",
+				"ClipboardManager"
+			],
+			[
+				"excep",
+				"exception"
+			],
+			[
+				"time",
+				"timestamp"
+			],
+			[
+				"Action",
+				"ActionEvent"
+			],
+			[
+				"Menu",
+				"MenuItem"
+			],
+			[
+				"Tra",
+				"TrayIcon"
+			],
+			[
+				"Sys",
+				"SystemTray"
+			],
+			[
+				"JMen",
+				"JMenu"
+			],
+			[
+				"ero",
+				"error_log"
+			],
+			[
+				"stat",
+				"status"
+			],
+			[
+				"fet",
+				"fetchLicenseRaw"
+			],
+			[
+				"cPan",
+				"cPanel"
+			],
+			[
+				"cPanel",
+				"cPanelLicensing"
+			],
+			[
+				"Auth",
+				"authorization"
+			],
+			[
+				"custom",
+				"custom"
+			],
+			[
+				"virtu",
+				"virtuozzo_ClientArea"
+			],
+			[
+				"EX",
+				"ExecuteScalar"
+			],
+			[
+				"Addres",
+				"Addresses"
+			],
+			[
+				"array_fil",
+				"array_filter"
+			],
+			[
+				"cus",
+				"custom"
+			],
+			[
+				"In",
+				"Information"
+			],
+			[
+				"push",
+				"array_push"
+			],
+			[
+				"Up",
+				"Update"
+			],
+			[
+				"Su",
+				"Success"
+			],
+			[
+				"Log",
+				"Login"
+			],
+			[
+				"Des",
+				"Destroy"
+			],
+			[
+				"pac",
+				"packet"
+			],
+			[
+				"pack",
+				"packet"
+			],
+			[
+				"packet",
+				"packets"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/io/raffi/JSON/Parser.java",
+			"settings":
+			{
+				"buffer_size": 6483,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/io/raffi/JSON/large.json",
+			"settings":
+			{
+				"buffer_size": 218,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/io/raffi/JSON/Lexer.java",
+			"settings":
+			{
+				"buffer_size": 9432,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/io/raffi/JSON/Main.java",
+			"settings":
+			{
+				"buffer_size": 517,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/io/raffi/JSON/JSONArray.java",
+			"settings":
+			{
+				"buffer_size": 1529,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/io/raffi/JSON/JSONObject.java",
+			"settings":
+			{
+				"buffer_size": 1836,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "build.xml",
+			"settings":
+			{
+				"buffer_size": 1135,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/io/raffi/JSON/JSONData.java",
+			"settings":
+			{
+				"buffer_size": 4962,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/C++/C++ Single File.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 277.0,
+		"last_filter": "json",
+		"selected_items":
+		[
+			[
+				"json",
+				"Pretty JSON: Minify (compress) JSON"
+			],
+			[
+				"inden",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"linter",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
+			[
+				"hex",
+				"Hex Viewer: Toggle Hex View"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"trim",
+				"Trimmer: Trim trailing whitespace."
+			],
+			[
+				"inde",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"indein",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"tri",
+				"Trimmer: Trim trailing whitespace."
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"low",
+				"Convert Case: Lower Case"
+			],
+			[
+				"lo",
+				"Convert Case: Lower Case"
+			],
+			[
+				"l",
+				"Convert Case: Lower Case"
+			],
+			[
+				"lowe",
+				"Convert Case: Lower Case"
+			],
+			[
+				"inedn",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"JSON",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"idnen",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"ind",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"in",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"theme",
+				"Themr: List themes"
+			],
+			[
+				"ine",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"in ",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"tr",
+				"Trimmer: Trim trailing whitespace."
+			],
+			[
+				"INDEN",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"mini",
+				"Pretty JSON: Minify (compress) JSON"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"jsonn",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"LOWE",
+				"Convert Case: Lower Case"
+			],
+			[
+				"lower	",
+				"Convert Case: Lower Case"
+			],
+			[
+				"trime",
+				"Trimmer: Trim trailing whitespace."
+			],
+			[
+				"idne",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"trimm",
+				"Trimmer: Trim trailing whitespace."
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"ass",
+				"ASCII Decorator: Font Selector"
+			],
+			[
+				"trimmer",
+				"Trimmer: Trim trailing whitespace."
+			],
+			[
+				"trimer",
+				"Trimmer: Remove blank spaces."
+			],
+			[
+				"package",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"as",
+				"ASCII Decorator: Font Selector"
+			],
+			[
+				"sub",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"f#",
+				"Set Syntax: F#"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"ali",
+				"Preferences: Alignment Key Bindings – User"
+			],
+			[
+				"scope",
+				"Scope Hunter: Show Scope Under Cursor(s)"
+			],
+			[
+				"gutt",
+				"SublimeLinter: Choose Gutter Theme"
+			],
+			[
+				"gutter",
+				"SublimeLinter: Choose Gutter Theme"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"themr",
+				"Themr: List themes"
+			],
+			[
+				"inen",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"doc",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"th",
+				"Themr: List themes"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 172.0,
+		"history":
+		[
+			"import sys",
+			"ll",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Raffi/Desktop/JSON",
+		"/Users/Raffi/Desktop/JSON/json",
+		"/Users/Raffi/Desktop/JSON/src",
+		"/Users/Raffi/Desktop/JSON/src/io",
+		"/Users/Raffi/Desktop/JSON/src/io/raffi",
+		"/Users/Raffi/Desktop/JSON/src/io/raffi/JSON"
+	],
+	"file_history":
+	[
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-0isfsf/index.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-g4z7j_/QRCode.php",
+		"/Users/Raffi/Desktop/TOTP/QRCode.php",
+		"/Users/Raffi/Desktop/JSON/json/test.json",
+		"/Users/Raffi/Google Drive/My Documents/Github/CloudClip/build.xml",
+		"/Users/Raffi/Desktop/JSON/src/io/raffi/JSON/Lexer.java",
+		"/Users/Raffi/Desktop/JSON/src/what.json",
+		"/Users/Raffi/Google Drive/My Documents/Github/CloudClip/src/io/raffi/CloudClip/MenuTray.java",
+		"/Users/Raffi/Desktop/JSON/src/io/raffi/JSON/what.json",
+		"/Users/Raffi/Desktop/JSON/json/large.json",
+		"/Users/Raffi/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Raffi/Desktop/JSON/src/io/raffi/JSON/Main.java",
+		"/Users/Raffi/Desktop/JSON/src/io/raffi/JSON/Token.java",
+		"/Users/Raffi/Desktop/JSON/src/io/raffi/JSON/JSONException.java",
+		"/Users/Raffi/Desktop/JSON/src/io/raffi/JSON/SyntacticError.java",
+		"/Users/Raffi/Desktop/JSON/README.md",
+		"/Users/Raffi/Desktop/JSON/Parser.java",
+		"/Users/Raffi/Google Drive/School/UIC/CS473/Projects/PROJ01/parser.cpp",
+		"/Users/Raffi/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/Raffi/Desktop/JSON/JSON.sublime-project",
+		"/Users/Raffi/Desktop/JSON/build.xml",
+		"/Users/Raffi/Desktop/JSON/io/raffi/JSON/Lexer.java",
+		"/Users/Raffi/Desktop/JSON/io/raffi/JSON/Token.java",
+		"/Users/Raffi/Desktop/JSON/Token.java",
+		"/Users/Raffi/Desktop/JSON/Lexer.java",
+		"/Users/Raffi/Desktop/JSON/CFG",
+		"/Users/Raffi/Desktop/JSON/JSONLexer.java",
+		"/Users/Raffi/Desktop/JSON - CFG",
+		"/Users/Raffi/Desktop/TOTP/TOTP.php",
+		"/Users/Raffi/Google Drive/My Documents/Github/JetRails-BlackBox/app/code/local/JetRails/BlackBox/Block/Email.php",
+		"/Users/Raffi/Google Drive/My Documents/Github/JetRails-BlackBox/app/code/local/JetRails/BlackBox/controllers/SendController.php",
+		"/Users/Raffi/Google Drive/My Documents/Github/JetRails-BlackBox/app/code/local/JetRails/BlackBox/Helper/Mailman.php",
+		"/Users/Raffi/Desktop/TOTP/test.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-n2tb95/JetRails_SecuritySuite.xml",
+		"/Users/Raffi/Desktop/test.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-p07sm2/php.ini",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-96t4k4/httpd.conf",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-u9kt84/.bashrc",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-59go74/.bashrc",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-odbdwf/.bashrc",
+		"/Users/Raffi/.bash_profile",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-29yll5/.bashrc",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-6gjrpe/.htaccess",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-lqhg5x/raffi.io.zone",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-hag59v/php.ini",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-yo60_7/php.ini",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-xpygfm/.bashrc",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-5n3t1x/.bashrc",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-0giij9/.bash_profile",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-j3jb2a/.bash_profile",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-_me28w/ll.py",
+		"/Users/Raffi/Google Drive/My Documents/Bash Scripts/ll/ll.x",
+		"/Users/Raffi/Google Drive/My Documents/Bash Scripts/ll/ll.py",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-5ernfl/.bashrc",
+		"/Users/Raffi/Google Drive/My Documents/Bash Scripts/edit/edit",
+		"/Users/Raffi/Google Drive/My Documents/Github/vz-portal/Information.php",
+		"/Users/Raffi/Google Drive/My Documents/Github/vz-portal/virtuozzo.php",
+		"/Users/Raffi/Google Drive/My Documents/Github/vz-portal/.gitignore",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-tfphmo/Information.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-6uymi2/Action.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-4gywix/Addresses.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-hwries/Logger.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-khjcqs/Template.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-zhqmjh/Information.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-ltjlt0/Action.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-67jf87/Logger.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-9f2d8l/Addresses.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-kgmzz1/WHMCS.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-uje1at/Database.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-hp04k7/Packet.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-yevixj/Process.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-cq3x1k/Authorization.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-wksu7e/Packet.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-931mgk/Process.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-uglp9b/Database.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-1m9wl4/cPanel.php",
+		"/Users/Raffi/Google Drive/School/UIC/CS362/Project/Joystick/node_modules/nan/doc/string_bytes.md",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-rc6ic_/WHMCS.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-5gabqf/hooks.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-9go4eb/hooks.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-wocc4j/hooks.php",
+		"/Users/Raffi/Google Drive/My Documents/Github/vz-portal/hooks.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-vw2i6i/virtuozzo.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-uxr9nv/WHMCS.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-diwx0v/virtuozzo.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-1ewxc6/Process.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-e3hmr7/Process.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-cwitjd/virtuozzo.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-_1bx6x/hooks.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-db6rz2/hooks.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-5782yh/hooks.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-jrd924/Information.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-xyx2xu/Information.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-nv3bv2/Authorization.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-slzmio/hooks.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-48qice/Information.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-gzd_ut/Process.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-en2dj0/Authorization.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-mb21xg/Logger.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-dyep91/hooks.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-bxvrvp/Process.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-ivmnnj/Information.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-ycod5g/Action.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-lt6a88/hooks.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-u7302v/Information.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-22hoky/virtuozzo.php",
+		"/Users/Raffi/Google Drive/My Documents/Github/vz-portal/vz.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-m1q5yu/Addresses.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-hhvz_0/Database.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-6zgcge/Information.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-y58llq/Process.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-87rqaa/Action.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-hxvz93/Information.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-v1kz_p/Addresses.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-xfktqx/virtuozzo.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-wgxwxn/Logger.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-ev4h2s/Information.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-g4w_gq/Addresses.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-q2gyxe/Action.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-drxxsg/Authorization.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-i3ij0z/Process.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-gkxffe/Logger.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-ojrg3i/Logger.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-3uz9i5/Logger.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-loqi23/Logger.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-sf924n/Logger.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-k8h5sw/Authorization.php",
+		"/var/folders/kn/zds0xmk941x2ffpjsy6cx8fr0000gn/T/rsub-l2ey1c/Authorization.php"
+	],
+	"find":
+	{
+		"height": 54.0
+	},
+	"find_in_files":
+	{
+		"height": 154.0,
+		"where_history":
+		[
+			"",
+			"/Users/Raffi/Desktop/bgansu3",
+			"/Users/Raffi/Google Drive/My Documents/Github/RSA-Encryption",
+			"/Users/Raffi/Google Drive/School/UIC/CS491/HW02",
+			"/Users/Raffi/Desktop/bgansu3",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"getClass",
+			"\"",
+			"// If they are base terminals, accept them and make sure that EOT is next",
+			"// If they are base terminals, accept them",
+			"it",
+			"add",
+			"data.is",
+			"Object",
+			"LexerException",
+			"whitespace",
+			"RuntimeException",
+			"::=",
+			"::=>",
+			"::=",
+			"BASE_TYPE",
+			"List",
+			"// Increment the index and return the token",
+			"javac",
+			"LexerException",
+			"RuntimeException",
+			"factory",
+			"pinSize",
+			"$args",
+			"$secretLength",
+			"$pinLength",
+			"TOTP",
+			"code",
+			"$hashpart",
+			"$hm",
+			"$translationalue",
+			"$hash",
+			"$secretkey",
+			"$length",
+			"$secret",
+			"$v",
+			"$c ",
+			"$tmp",
+			"encodeSVG",
+			"QRvect::svg",
+			"QRvect",
+			"encodeSVG",
+			"svg",
+			"$s",
+			"30",
+			"chunk",
+			"$secret",
+			"string",
+			"$secretLength",
+			"$timeSlice",
+			"$character",
+			"$char ",
+			"$char",
+			"$bin ",
+			"binaryArray",
+			"binaryString",
+			"$base32String",
+			"$s ",
+			"binaryString",
+			"$string",
+			"<magento_dir>",
+			"<ini_file_path>",
+			"<path_to_binary>",
+			"<Directory \"/var/www/html\">",
+			"AllowOverride",
+			"rewrite",
+			"max_execution_time",
+			"short_open_tag",
+			"error_",
+			"= '1'",
+			"		\n",
+			"additional",
+			"['configoptions']",
+			"$INVOICEID",
+			"CREDENTIALS",
+			"upgrade",
+			"getDedicated",
+			"$IP_LINK",
+			"getAddresses",
+			"$IP_LINK",
+			"IPLink",
+			"UPGRADE[0][",
+			"UPGRADE",
+			"getIDFromAddress",
+			"available",
+			"error_",
+			"hostname",
+			"remove",
+			"update",
+			"getID",
+			"timeMachine ( $result",
+			", $result->status",
+			", $",
+			"erro",
+			"$header",
+			"register",
+			"unsus",
+			"timeMachine ( $result->data );",
+			"timeMachine ( $re",
+			"{\n",
+			"generat",
+			"function ",
+			"generatePassword",
+			"$auth->WHMCS->Action",
+			"->Action",
+			"error_",
+			"delete",
+			"update",
+			"cpanelLink",
+			"unregister",
+			"register",
+			"CPane",
+			"unregister",
+			"$DELETE",
+			"CloudClip.Clou",
+			"gen",
+			"password",
+			"$callback ( $result );",
+			"print_r",
+			"eid",
+			"echo",
+			"Timeout",
+			"examine",
+			"error_lo",
+			"error_log",
+			"echo",
+			"$json",
+			"SSL",
+			".server"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/io/raffi/JSON/Parser.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6483,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								281,
+								281
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 229.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/io/raffi/JSON/large.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 218,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								69,
+								69
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/io/raffi/JSON/Lexer.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9432,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								538,
+								538
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 511.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/io/raffi/JSON/Main.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 517,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								117,
+								117
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/io/raffi/JSON/JSONArray.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1529,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								745,
+								745
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 443.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/io/raffi/JSON/JSONObject.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1836,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								933,
+								933
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 547.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "build.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1135,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								927,
+								927
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/io/raffi/JSON/JSONData.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4962,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4634,
+								4634
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3193.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 54.0
+	},
+	"input":
+	{
+		"height": 53.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 327.0
+	},
+	"output.figlet_preview":
+	{
+		"height": 263.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.hex_viewer_inspector":
+	{
+		"height": 133.0
+	},
+	"output.scope_viewer":
+	{
+		"height": 110.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 110.0
+	},
+	"pinned_build_system": "",
+	"project": "JSON.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"trim",
+				"UIC/CS362/Project/Joystick/node_modules/nan/doc/string_bytes.md"
+			],
+			[
+				"",
+				"UIC/CS473/Projects/PROJ01/Tests/test05.txt"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 277.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
