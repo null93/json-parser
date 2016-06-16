@@ -13,8 +13,13 @@
 	<property name="package.name.full" value="Java JSON Parser" />
 	<property name="package.version" value="1.0.0" />
 
-	<path id="classpath">
+	<path id="classpath-package">
 		<pathelement location="build/classes" />
+	</path>
+
+	<path id="classpath-test">
+		<fileset dir="build/jar" includes="**/*.jar"/>
+		<fileset dir="lib" includes="**/*.jar"/>
 	</path>
 
 	<target name="clean">
@@ -26,16 +31,16 @@
 		</delete>
 	</target>
 
-	<target name="build">
+	<target name="build-package">
 		<mkdir dir="build/classes"/>
 		<javac srcdir="src" destdir="build/classes" includeantruntime="false" >  
 			<compilerarg value="-Xlint:unchecked"/> 
 			<compilerarg value="-Xdiags:verbose"/> 
-			<classpath refid="classpath" />
+			<classpath refid="classpath-package" />
 		</javac>
 	</target>
 
-	<target name="jar" depends="build">
+	<target name="jar-package" depends="build-package">
 		<mkdir dir="build/jar"/>
 		<jar destfile="build/jar/JSON.jar" basedir="build/classes" >
 			<manifest>
@@ -53,10 +58,18 @@
 		</jar>
 	</target>
 
-	<target name="run" depends="jar">
-		<java jar="build/jar/JSON.jar" fork="true" >
-			<classpath refid="classpath" />
-		</java>
+	<target name="build-test">
+		<javac srcdir="test" destdir="test" classpath="lib/*.jar:build/jar/JSON.jar" includeantruntime="false" >  
+			<compilerarg value="-Xlint:unchecked"/> 
+			<compilerarg value="-Xdiags:verbose"/> 
+			<classpath refid="classpath-test" />
+		</javac>
+	</target>
+
+	<target name="run" depends="build-test" >
+		<java classname="Valid">
+	    	<classpath refid="classpath-test" />
+	    </java>
 	</target>
 
 </project>
