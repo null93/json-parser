@@ -151,10 +151,18 @@ public class JSONData {
 			}
 			// Catch any exceptions and try to cast as double and then integer (lossy)
 			catch ( NumberFormatException exception ) {
-				// Cast as a double
-				double value = Double.parseDouble ( ( String ) this.value );
-				// Then return as an integer
-				return ( int ) Math.round ( value );
+				// Try to parse as decimal
+				try {
+					// Cast as a double
+					double value = Double.parseDouble ( ( String ) this.value );
+					// Then return as an integer
+					return ( int ) Math.round ( value );
+				}
+				// Catch the exception if it fails
+				catch ( NumberFormatException e ) {
+					// Throw a new error
+					throw new JSONException ( "No numerical value found in string" );
+				}
 			}
 		}
 		// If the data type is a boolean
@@ -199,8 +207,16 @@ public class JSONData {
 		}
 		// If the data type is a string
 		else if ( this.isString () ) {
-			// Cast as a double and return
-			return Double.parseDouble ( ( String ) this.value );
+			// Try to parse as decimal
+			try {
+				// Cast as a double and return
+				return Double.parseDouble ( ( String ) this.value );
+			}
+			// Catch the exception if it fails
+			catch ( NumberFormatException e ) {
+				// Throw a new error
+				throw new JSONException ( "No numerical value found in string" );
+			}
 		}
 		// If the data type is null
 		else if ( this.isNull () ) {
@@ -262,6 +278,11 @@ public class JSONData {
 	 * @return       String                      Returned data value as String
 	 */
 	public String getString () {
+		// If the method is a string, we don't want to append the quotes around the string
+		if ( this.isString () ) {
+			// Return casted value as string
+			return ( String ) this.value;
+		}
 		// Simply return the toString method
 		return this.toString ();
 	}

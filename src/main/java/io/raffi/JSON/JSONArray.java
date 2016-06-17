@@ -32,11 +32,13 @@ public class JSONArray extends ArrayList <JSONData> {
 	 * that the JSONData class constructor is overloaded, and the data type is saved internally in
 	 * that class.
 	 * @param        Boolean       data          The data to save into the array
-	 * @return       void
+	 * @return       JSONArray                   Return the reference so we can chain commands
 	 */
-	public void add ( Boolean data ) {
+	public JSONArray add ( Boolean data ) {
 		// Simply add the JSONData and pass parameter data to JSONData overloaded constructor
 		super.add ( new JSONData ( data ) );
+		// Return the reference to the array so we can chain commands
+		return this;
 	}
 
 	/**
@@ -44,11 +46,13 @@ public class JSONArray extends ArrayList <JSONData> {
 	 * that the JSONData class constructor is overloaded, and the data type is saved internally in
 	 * that class.
 	 * @param        int           data          The data to save into the array
-	 * @return       void
+	 * @return       JSONArray                   Return the reference so we can chain commands
 	 */
-	public void add ( int data ) {
+	public JSONArray add ( int data ) {
 		// Simply add the JSONData and pass parameter data to JSONData overloaded constructor
 		super.add ( new JSONData ( data ) );
+		// Return the reference to the array so we can chain commands
+		return this;
 	}
 
 	/**
@@ -56,11 +60,13 @@ public class JSONArray extends ArrayList <JSONData> {
 	 * that the JSONData class constructor is overloaded, and the data type is saved internally in
 	 * that class.
 	 * @param        double        data          The data to save into the array
-	 * @return       void
+	 * @return       JSONArray                   Return the reference so we can chain commands
 	 */
-	public void add ( double data ) {
+	public JSONArray add ( double data ) {
 		// Simply add the JSONData and pass parameter data to JSONData overloaded constructor
 		super.add ( new JSONData ( data ) );
+		// Return the reference to the array so we can chain commands
+		return this;
 	}
 
 	/**
@@ -68,11 +74,13 @@ public class JSONArray extends ArrayList <JSONData> {
 	 * that the JSONData class constructor is overloaded, and the data type is saved internally in
 	 * that class.
 	 * @param        String        data          The data to save into the array
-	 * @return       void
+	 * @return       JSONArray                   Return the reference so we can chain commands
 	 */
-	public void add ( String data ) {
+	public JSONArray add ( String data ) {
 		// Simply add the JSONData and pass parameter data to JSONData overloaded constructor
 		super.add ( new JSONData ( data ) );
+		// Return the reference to the array so we can chain commands
+		return this;
 	}
 
 	/**
@@ -80,11 +88,13 @@ public class JSONArray extends ArrayList <JSONData> {
 	 * that the JSONData class constructor is overloaded, and the data type is saved internally in
 	 * that class.
 	 * @param        JSONData.Type data          The data to save into the array
-	 * @return       void
+	 * @return       JSONArray                   Return the reference so we can chain commands
 	 */
-	public void add ( JSONData.Type data ) {
+	public JSONArray add ( JSONData.Type data ) {
 		// Simply add the JSONData and pass parameter data to JSONData overloaded constructor
 		super.add ( new JSONData ( data ) );
+		// Return the reference to the array so we can chain commands
+		return this;
 	}
 
 	/**
@@ -92,11 +102,13 @@ public class JSONArray extends ArrayList <JSONData> {
 	 * that the JSONData class constructor is overloaded, and the data type is saved internally in
 	 * that class.
 	 * @param        JSONArray     data          The data to save into the array
-	 * @return       void
+	 * @return       JSONArray                   Return the reference so we can chain commands
 	 */
-	public void add ( JSONArray data ) {
+	public JSONArray add ( JSONArray data ) {
 		// Simply add the JSONData and pass parameter data to JSONData overloaded constructor
 		super.add ( new JSONData ( data ) );
+		// Return the reference to the array so we can chain commands
+		return this;
 	}
 
 	/**
@@ -104,11 +116,13 @@ public class JSONArray extends ArrayList <JSONData> {
 	 * that the JSONData class constructor is overloaded, and the data type is saved internally in
 	 * that class.
 	 * @param        JSONObject    data          The data to save into the array
-	 * @return       void
+	 * @return       JSONArray                   Return the reference so we can chain commands
 	 */
-	public void add ( JSONObject data ) {
+	public JSONArray add ( JSONObject data ) {
 		// Simply add the JSONData and pass parameter data to JSONData overloaded constructor
 		super.add ( new JSONData ( data ) );
+		// Return the reference to the array so we can chain commands
+		return this;
 	}
 
 	/**

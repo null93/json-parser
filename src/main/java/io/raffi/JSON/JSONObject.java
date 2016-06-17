@@ -34,11 +34,13 @@ public class JSONObject extends HashMap <String, JSONData> {
 	 * key.
 	 * @param        String        key           The key for the HashMap entry
 	 * @param        int           value         The value to initialize JSONData instance and add
-	 * @return       void
+	 * @return       JSONObject                  Return reference to self, to chain commands
 	 */
-	public void put ( String key, int value ) {
+	public JSONObject put ( String key, int value ) {
 		// Initialize JSONData instance with passed data and add to HashMap using key string
 		super.put ( key, new JSONData ( value ) );
+		// Return reference to self, so we can chain commands
+		return this;
 	}
 
 	/**
@@ -47,11 +49,13 @@ public class JSONObject extends HashMap <String, JSONData> {
 	 * key.
 	 * @param        String        key           The key for the HashMap entry
 	 * @param        double        value         The value to initialize JSONData instance and add
-	 * @return       void
+	 * @return       JSONObject                  Return reference to self, to chain commands
 	 */
-	public void put ( String key, double value ) {
+	public JSONObject put ( String key, double value ) {
 		// Initialize JSONData instance with passed data and add to HashMap using key string
 		super.put ( key, new JSONData ( value ) );
+		// Return reference to self, so we can chain commands
+		return this;
 	}
 
 	/**
@@ -60,11 +64,13 @@ public class JSONObject extends HashMap <String, JSONData> {
 	 * key.
 	 * @param        String        key           The key for the HashMap entry
 	 * @param        Boolean       value         The value to initialize JSONData instance and add
-	 * @return       void
+	 * @return       JSONObject                  Return reference to self, to chain commands
 	 */
-	public void put ( String key, Boolean value ) {
+	public JSONObject put ( String key, Boolean value ) {
 		// Initialize JSONData instance with passed data and add to HashMap using key string
 		super.put ( key, new JSONData ( value ) );
+		// Return reference to self, so we can chain commands
+		return this;
 	}
 
 	/**
@@ -73,11 +79,13 @@ public class JSONObject extends HashMap <String, JSONData> {
 	 * key.
 	 * @param        String        key           The key for the HashMap entry
 	 * @param        String        value         The value to initialize JSONData instance and add
-	 * @return       void
+	 * @return       JSONObject                  Return reference to self, to chain commands
 	 */
-	public void put ( String key, String value ) {
+	public JSONObject put ( String key, String value ) {
 		// Initialize JSONData instance with passed data and add to HashMap using key string
 		super.put ( key, new JSONData ( value ) );
+		// Return reference to self, so we can chain commands
+		return this;
 	}
 
 	/**
@@ -86,11 +94,13 @@ public class JSONObject extends HashMap <String, JSONData> {
 	 * key.
 	 * @param        String          key           The key for the HashMap entry
 	 * @param        JSONData.Type   value         The value to initialize JSONData instance and add
-	 * @return       void
+	 * @return       JSONObject                  Return reference to self, to chain commands
 	 */
-	public void put ( String key, JSONData.Type value ) {
+	public JSONObject put ( String key, JSONData.Type value ) {
 		// Initialize JSONData instance with passed data and add to HashMap using key string
 		super.put ( key, new JSONData ( value ) );
+		// Return reference to self, so we can chain commands
+		return this;
 	}
 
 	/**
@@ -99,11 +109,13 @@ public class JSONObject extends HashMap <String, JSONData> {
 	 * key.
 	 * @param        String        key           The key for the HashMap entry
 	 * @param        JSONArray     value         The value to initialize JSONData instance and add
-	 * @return       void
+	 * @return       JSONObject                  Return reference to self, to chain commands
 	 */
-	public void put ( String key, JSONArray value ) {
+	public JSONObject put ( String key, JSONArray value ) {
 		// Initialize JSONData instance with passed data and add to HashMap using key string
 		super.put ( key, new JSONData ( value ) );
+		// Return reference to self, so we can chain commands
+		return this;
 	}
 
 	/**
@@ -112,11 +124,13 @@ public class JSONObject extends HashMap <String, JSONData> {
 	 * key.
 	 * @param        String        key           The key for the HashMap entry
 	 * @param        JSONObject    value         The value to initialize JSONData instance and add
-	 * @return       void
+	 * @return       JSONObject                  Return reference to self, to chain commands
 	 */
-	public void put ( String key, JSONObject value ) {
+	public JSONObject put ( String key, JSONObject value ) {
 		// Initialize JSONData instance with passed data and add to HashMap using key string
 		super.put ( key, new JSONData ( value ) );
+		// Return reference to self, so we can chain commands
+		return this;
 	}
 
 	/**

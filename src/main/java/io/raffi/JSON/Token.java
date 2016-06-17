@@ -72,7 +72,7 @@ public class Token {
 	 * @param        int           column        The column number the token starts on
 	 */
 	protected Token ( Type type, String value, int line, int column ) {
-		this.type = type;
+		this.type = type == null ? Type.UNKNOWN : type;
 		this.value = value;
 		this.line = line;
 		this.column = column;
