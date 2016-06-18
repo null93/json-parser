@@ -59,6 +59,7 @@ public class ParserTest {
 	public void dataTest () {
 		assertTrue ( new Parser ( new File ( "assets/json/test_1.json" ) ).getResult () instanceof JSONData );
 		assertTrue ( new Parser ( new File ( "assets/json/test_2.json" ) ).getResult () instanceof JSONData );
+		assertTrue ( new Parser ( new File ( "assets/json/test_3.json" ) ).getResult () instanceof JSONData );
 		try {
 			new Parser ( "1284712893418723648716234871623478213" );
 			fail ("JSONException was not thrown!");

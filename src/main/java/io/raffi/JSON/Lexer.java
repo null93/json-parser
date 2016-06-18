@@ -1,9 +1,10 @@
 package io.raffi.JSON;
 
 import java.util.Scanner;
-import java.io.InputStream;
 import java.io.File;
+import java.io.InputStream;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.nio.file.Files;
 
 /**
@@ -34,6 +35,13 @@ public class Lexer {
 	 * @var          String        escaped       Which characters can be escaped in a string
 	 */
 	private String escaped = "\"/\\\bfnrtu";
+
+	/**
+	 * This data member specifies which characters are considered to be part of a hex code.  It is
+	 * wrapped in a string instead of an array so we can use the String.contains method.
+	 * @var          String        hex           Characters are considered to be part of a hex code
+	 */
+	private String hex = "0123456789abcdefABCDEF";
 
 	/**
 	 * This data member saves the json data in a string, whether the Lexer is initialized with a
@@ -197,8 +205,49 @@ public class Lexer {
 			}
 			// Check to see if there is an escaped character
 			if ( current == '\\' ) {
+				// Check to see if a unicode escape is taking place
+				if ( this.index + 1 >= this.length || this.data.charAt ( this.index + 1 ) == 'u' ) {
+					// Make sure there is enough characters for UTF-8
+					if ( this.index + 6 < this.length ) {
+						// Get the unicode hex and save it into a string, also initialize index to 0
+						String evaluate = this.data.substring ( this.index + 2, this.index + 6 );
+						int index = 0;
+						// Loop through all the characters in unicode string
+						for ( char c : evaluate.toCharArray () ) {
+							// If the index is 0 and the char is not zero, then throw
+							if ( index == 0 && c != '0' ) {
+								throw new SyntacticError (
+									"Invalid UTF-8 character '\\u" + evaluate + "'", this.line, this.column
+									);
+							}
+							// If the index is 1 and range is not in 0-3, then throw
+							else if ( index == 1 && ( c < '0' || c > '3' ) ) {
+								throw new SyntacticError (
+									"Invalid UTF-8 character '\\u" + evaluate + "'", this.line, this.column
+									);
+							}
+							// If the index is greater and its not a valid hex character, then throw
+							else if ( !this.hex.contains ( c + "" ) ) {
+								throw new SyntacticError (
+									"Invalid UTF-8 character '\\u" + evaluate + "'", this.line, this.column
+									);
+							}
+							// Increment the index
+							index++;
+						}
+						// Save the unicode character as the current one
+						current = ( char ) Integer.parseInt ( evaluate, 16 );
+						// Increment by 5, the sixth is taken care of below
+						this.index += 5;
+						this.column += 5;
+					}
+					// If there isn't enough room for the unicode hex, then throw
+					else {
+						throw new SyntacticError ( "Invalid UTF-8 character", this.line, this.column );
+					}
+				}
 				// Check to see if there is an appropriate escape character next
-				if ( this.index + 1 >= this.length || !this.escaped.contains ( this.data.charAt ( this.index + 1 ) + "" ) ) {
+				else if ( this.index + 1 >= this.length || !this.escaped.contains ( this.data.charAt ( this.index + 1 ) + "" ) ) {
 					// Throw a new error stating that an invalid escape has occurred
 					throw new SyntacticError ( "Invalid escape character", this.line, this.column );
 				}
@@ -357,55 +406,55 @@ public class Lexer {
 			switch ( current ) {
 				case 'n':
 					// Try to match the NULL literal
-					return this.matchLiteral ( Token.Type.NULL );
+				return this.matchLiteral ( Token.Type.NULL );
 				case 'f':
 					// Try to match the FALSE literal
-					return this.matchLiteral ( Token.Type.FALSE );
+				return this.matchLiteral ( Token.Type.FALSE );
 				case 't':
 					// Try to match the TRUE literal
-					return this.matchLiteral ( Token.Type.TRUE );
+				return this.matchLiteral ( Token.Type.TRUE );
 				case ':':
 					// Increment the index and the column and return the token
-					this.index++;
-					return new Token ( Token.Type.COLON, value, this.line, this.column++ );
+				this.index++;
+				return new Token ( Token.Type.COLON, value, this.line, this.column++ );
 				case ',':
 					// Increment the index and the column and return the token
-					this.index++;
-					return new Token ( Token.Type.COMMA, value, this.line, this.column++ );
+				this.index++;
+				return new Token ( Token.Type.COMMA, value, this.line, this.column++ );
 				case '{':
 					// Increment the index and the column and return the token
-					this.index++;
-					return new Token ( Token.Type.LEFT_CURLY, value, this.line, this.column++ );
+				this.index++;
+				return new Token ( Token.Type.LEFT_CURLY, value, this.line, this.column++ );
 				case '}':
 					// Increment the index and the column and return the token
-					this.index++;
-					return new Token ( Token.Type.RIGHT_CURLY, value, this.line, this.column++ );
+				this.index++;
+				return new Token ( Token.Type.RIGHT_CURLY, value, this.line, this.column++ );
 				case '[':
 					// Increment the index and the column and return the token
-					this.index++;
-					return new Token ( Token.Type.LEFT_SQUARE, value, this.line, this.column++ );
+				this.index++;
+				return new Token ( Token.Type.LEFT_SQUARE, value, this.line, this.column++ );
 				case ']':
 					// Increment the index and the column and return the token
-					this.index++;
-					return new Token ( Token.Type.RIGHT_SQUARE, value, this.line, this.column++ );
+				this.index++;
+				return new Token ( Token.Type.RIGHT_SQUARE, value, this.line, this.column++ );
 				case '\n':
 					// Increment the line, column, and index and beak
-					this.index++;
-					this.line++;
-					this.column = 1;
-					break;
+				this.index++;
+				this.line++;
+				this.column = 1;
+				break;
 				case '\t':
 				case ' ':
 					// On whitespace, increment the index and the column, and break
-					this.column++;
-					this.index++;
-					break;
+				this.column++;
+				this.index++;
+				break;
 				default:
 					// Increment column and index
-					this.column++;
-					this.index++;
+				this.column++;
+				this.index++;
 					// Return the unknown token type
-					return new Token ( Token.Type.UNKNOWN, value, this.line, this.column - 1 );
+				return new Token ( Token.Type.UNKNOWN, value, this.line, this.column - 1 );
 			}
 		}
 		// After we went through everything, we want to keep returning EOT token
