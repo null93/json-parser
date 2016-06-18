@@ -2,6 +2,7 @@ package io.raffi.JSON;
 
 import java.io.InputStream;
 import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.io.File;
 
 /**
@@ -195,8 +196,18 @@ public class Parser {
 				}
 				// Otherwise there is no scientific notation
 				else {
-					// Initialize to as an integer JSONData instance
-					data = new JSONData ( Integer.parseInt ( this.current.value ) );
+					// Try to initialize as integer
+					try {
+						// Initialize to as an integer JSONData instance
+						data = new JSONData ( Integer.parseInt ( this.current.value ) );
+					}
+					// Catch to see if we fail, number might be too big
+					catch ( NumberFormatException exception ) {
+						// Throw an error stating that number is too big for an integer
+						throw new JSONException (
+							"Problem casting '" + this.current.value + "' as integer, too big?"
+						);
+					}
 				}
 				// Match the number token
 				this.match ( this.current.type );
@@ -315,15 +326,40 @@ public class Parser {
 	 * @return       void
 	 */
 	private void arrayRecurse ( JSONArray array ) {
-		// If there isn't a right square bracket, then there is more
-		if ( this.current.type != Token.Type.RIGHT_SQUARE ) {
+		// If one of these tokens are ahead of it, then we can match contents
+		if ( this.current.type == Token.Type.NUMBER
+			 || this.current.type == Token.Type.STRING
+			 || this.current.type == Token.Type.NULL
+			 || this.current.type == Token.Type.TRUE
+			 || this.current.type == Token.Type.FALSE
+			 || this.current.type == Token.Type.LEFT_SQUARE
+			 || this.current.type == Token.Type.LEFT_CURLY ) {
 			// Add the base type to the array
 			array.add ( this.base () );
 			// If there is a comma, there is more in the array
 			if ( this.current.type == Token.Type.COMMA ) {
 				// Match the comma and pass array reference to self, recursively
 				this.match ( Token.Type.COMMA );
-				this.arrayRecurse ( array );
+				// Make sure that a valid base value is next
+				if ( this.current.type == Token.Type.NUMBER
+					 || this.current.type == Token.Type.STRING
+					 || this.current.type == Token.Type.NULL
+					 || this.current.type == Token.Type.TRUE
+					 || this.current.type == Token.Type.FALSE
+					 || this.current.type == Token.Type.LEFT_SQUARE
+					 || this.current.type == Token.Type.LEFT_CURLY ) {
+					// Match that base value
+					this.arrayRecurse ( array );
+				}
+				// Otherwise we need to throw an error
+				else {
+					// Throw a syntactic error
+					throw new SyntacticError (
+						"Expecting BASE_VALUE, got '" + this.current.value + "'",
+						this.current.line,
+						this.current.column
+					);
+				}
 			}
 		}
 	}

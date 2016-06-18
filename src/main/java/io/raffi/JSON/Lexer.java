@@ -76,6 +76,11 @@ public class Lexer {
 	 * @param        String        data          The JSON data string to tokenize
 	 */
 	protected Lexer ( String data ) {
+		// Make sure the string is not null
+		if ( data == null ) {
+			// Throw an exception
+			throw new JSONException ( "Uninitialized String was passed to constructor" );
+		}
 		// Save the passed in data
 		this.data = data;
 		// Initialize the index, length, line, and column number initially
@@ -92,6 +97,11 @@ public class Lexer {
 	 * @param        File          filepath      The JSON data file to tokenize
 	 */
 	protected Lexer ( File filepath ) {
+		// Make sure the file instance is not null
+		if ( filepath == null ) {
+			// Throw an exception
+			throw new JSONException ( "Invalid File object was passed to constructor" );
+		}
 		// Try to load the file contents, IOException might occur
 		try {
 			// Load in the file contents as a string
@@ -229,7 +239,7 @@ public class Lexer {
 			value += current;
 			this.index++;
 			this.column++;
-			current = this.data.charAt ( this.index );
+			current = this.index < this.length ? this.data.charAt ( this.index ) : '\0';
 		}
 		// If its a zero, then we can only match it, no leading zeros
 		if ( current == '0' ) {
@@ -237,7 +247,7 @@ public class Lexer {
 			value += current;
 			this.index++;
 			this.column++;
-			current = this.data.charAt ( this.index );
+			current = this.index < this.length ? this.data.charAt ( this.index ) : '\0';
 		}
 		// If it isn't a digit, then match until a non numeral is encountered
 		else if ( Character.isDigit ( current ) ) {
@@ -247,7 +257,7 @@ public class Lexer {
 				value += current;
 				this.index++;
 				this.column++;
-				current = this.data.charAt ( this.index );
+				current = this.index < this.length ? this.data.charAt ( this.index ) : '\0';
 			}
 		}
 		// Otherwise print an exception, since it would be an invalid numeral
@@ -261,7 +271,7 @@ public class Lexer {
 			value += current;
 			this.index++;
 			this.column++;
-			current = this.data.charAt ( this.index );
+			current = this.index < this.length ? this.data.charAt ( this.index ) : '\0';
 			// If the next character is numeric all is well
 			if ( Character.isDigit ( current ) ) {
 				// Loop through until we match every number after the decimal point
@@ -270,7 +280,7 @@ public class Lexer {
 					value += current;
 					this.index++;
 					this.column++;
-					current = this.data.charAt ( this.index );
+					current = this.index < this.length ? this.data.charAt ( this.index ) : '\0';
 				}
 			}
 			// Otherwise print an exception error, since we need a number after the decimal point
@@ -285,14 +295,14 @@ public class Lexer {
 			value += current;
 			this.index++;
 			this.column++;
-			current = this.data.charAt ( this.index );
+			current = this.index < this.length ? this.data.charAt ( this.index ) : '\0';
 			// If there is a sign indication, match it
 			if ( current == '+' || current == '-' ) {
 				// Append to value, increment index and column, and update the current character
 				value += current;
 				this.index++;
 				this.column++;
-				current = this.data.charAt ( this.index );
+				current = this.index < this.length ? this.data.charAt ( this.index ) : '\0';
 			}
 			// If the next character is a numeral, all is well
 			if ( Character.isDigit ( current ) ) {
@@ -302,7 +312,7 @@ public class Lexer {
 					value += current;
 					this.index++;
 					this.column++;
-					current = this.data.charAt ( this.index );
+					current = this.index < this.length ? this.data.charAt ( this.index ) : '\0';
 				}
 			}
 			// Otherwise there is an error, since there needs to be at least one number after (e|E)
