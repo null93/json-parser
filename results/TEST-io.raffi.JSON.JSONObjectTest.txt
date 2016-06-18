@@ -1,8 +1,8 @@
 Testsuite: io.raffi.JSON.JSONObjectTest
 Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
 
-Testcase: constructorTest took 0.004 sec
-Testcase: getStringTest took 0 sec
+Testcase: constructorTest took 0.005 sec
+Testcase: getStringTest took 0.001 sec
 Testcase: getArrayTest took 0 sec
 Testcase: getIntTest took 0 sec
 Testcase: putTest took 0 sec
