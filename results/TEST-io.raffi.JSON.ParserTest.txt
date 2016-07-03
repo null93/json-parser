@@ -1,6 +1,6 @@
 Testsuite: io.raffi.JSON.ParserTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec
 
-Testcase: constructorTest took 0.047 sec
+Testcase: constructorTest took 0.07 sec
 Testcase: simpleTest took 0 sec
-Testcase: dataTest took 0.026 sec
+Testcase: dataTest took 0.028 sec

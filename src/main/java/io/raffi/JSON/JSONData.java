@@ -308,15 +308,15 @@ public class JSONData {
 	 * This overloaded function takes in an array index, and it tries to get the array instance if
 	 * applicable, and passes the index to the object and returns a JSONData object.
 	 * @param        int           index         The index to access in the array
-	 * @return       JSONData  					 Object at index, null if not array
+	 * @return       JSONArray  				 Object at index, null if not array
 	 */
-	public JSONData getArray ( int index ) {
+	public JSONArray getArray ( int index ) {
 		// Get the array from if applicable
 		JSONArray array = this.getArray ();
 		// Make sure it isn't null
 		if ( array != null ) {
 			// Return the passed call to the array object
-			return array.get ( index );
+			return array.get ( index ) == null ? null : array.get ( index ).getArray ();
 		}
 		// Otherwise return null
 		return null;
@@ -343,15 +343,15 @@ public class JSONData {
 	 * This overloaded function takes in an object key index, and it tries to get the object
 	 * instance if applicable, and passes the key to the object and returns a JSONData object.
 	 * @param        String        key           The key to access the object
-	 * @return       JSONData  					 Object at index, null if not object
+	 * @return       JSONObject  			     Object at index, null if not object
 	 */
-	public JSONData getObject ( String key ) {
+	public JSONObject getObject ( String key ) {
 		// Get the object from if applicable
 		JSONObject object = this.getObject ();
 		// Make sure it isn't null
 		if ( object != null ) {
 			// Return the passed call to the object
-			return object.get ( key );
+			return object.get ( key ) == null ? null : object.get ( key ).getObject ();
 		}
 		// Otherwise return null
 		return null;
