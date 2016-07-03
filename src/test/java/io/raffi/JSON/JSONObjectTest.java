@@ -89,6 +89,8 @@ public class JSONObjectTest {
 		object.put ( "array", new JSONArray () );
 		String expected = "{\"null\":null,\"string\":\"test\",\"array\":[],\"double\":0.1,\"true\":true,\"false\":false,\"int\":0,\"object\":{}}";
 		assertTrue ( object.toString ().equals ( expected ) );
+		assertTrue ( object.toString ().equals ( expected ) );
+		assertTrue ( object.toString ().equals ( expected ) );
 	}
 
 }

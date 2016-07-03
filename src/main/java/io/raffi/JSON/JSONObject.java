@@ -256,23 +256,22 @@ public class JSONObject extends HashMap <String, JSONData> {
 	public String toString () {
 		// Initialize the result string with the object begin syntax bracket
 		String result = "{";
-		// Initialize the iterator from the hash map
-		Iterator iterator = this.entrySet ().iterator ();
-		// Loop through until we reach the end using th iterator
-		while ( iterator.hasNext () ) {
-			// Initialize the pair using the iterator
-			Map.Entry pair = ( Map.Entry ) iterator.next ();
-			// Append the key value pair into a string
-			result += "\"" + pair.getKey () + "\":" + pair.getValue ().toString ();
-			// If the iterator is not the last one
-			if ( iterator.hasNext () ) {
-				// Append the separating comma into the result string
-				result += ",";
-			}
-			// Remove the iterator to avoid exception
-			iterator.remove ();
+		// Initialize the traversal variable, and the size variable
+		int i = 0;
+		int size = this.size ();
+		// Loop through all the map entries
+		for( Map.Entry <String, JSONData> v : this.entrySet () ) {
+			// Append the key value pair
+	    	result += "\"" + v.getKey () + "\":" + v.getValue ().toString ();
+	    	// If there are more pair, add a pair separator
+	    	if ( i + 1 < size ) {
+	    		// Append the comma
+	    		result += ",";
+	    	}
+	    	// Increment the traversal variable
+	    	i++;
 		}
-		// Return the result string with the object end syntax bracket
+		// Return the result string
 		return result + "}";
 	}
 

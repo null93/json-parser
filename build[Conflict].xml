@@ -104,24 +104,34 @@
 					<include name="**/*.java" />
 				</fileset>
 			</batchtest>
-		</junit>
+	    </junit>
 	</target>
 	<!-- This generates the documentation -->
 	<target name="documentation" >
-		<javadoc packagenames="${package.class.path}.*"
-			sourcepath="${source.main}"
-			defaultexcludes="yes"
-			destdir="${documentation}"
-			author="true"
-			version="true"
-			use="true"
-			windowtitle="Test API">
-		</javadoc>
+  <javadoc
+           destdir="${documentation}"
+           author="true"
+           version="true"
+           use="true"
+           windowtitle="Java JSON Parser">
+
+    <packageset dir="${source.main}" defaultexcludes="yes">
+      <include name="com/dummy/test/**"/>
+      <exclude name="com/dummy/test/doc-files/**"/>
+    </packageset>
+
+    <doctitle><![CDATA[<h1>Test</h1>]]></doctitle>
+    <bottom><![CDATA[<i>Copyright &#169; 2000 Dummy Corp. All Rights Reserved.</i>]]></bottom>
+    <tag name="todo" scope="all" description="To do:"/>
+    <group title="Group 1 Packages" packages="com.dummy.test.a*"/>
+    <group title="Group 2 Packages" packages="com.dummy.test.b*:com.dummy.test.c*"/>
+    <link offline="true" href="http://docs.oracle.com/javase/7/docs/api/" packagelistLoc="C:\tmp"/>
+    <link href="http://docs.oracle.com/javase/7/docs/api/"/>
+  </javadoc>
 	</target>
 	<!-- This is to prepare for the Github release -->
 	<target name="release" depends="clean">
 		<antcall target="run-test" />
-		<antcall target="documentation" />
 		<fileset dir="." includes="**/*.DS_Store"/>
 		<fileset dir="${source.main}" includes="**/*.class"/>
 		<fileset dir="${source.test}" includes="**/*.class"/>
