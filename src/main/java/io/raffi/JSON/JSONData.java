@@ -305,6 +305,24 @@ public class JSONData {
 	}
 
 	/**
+	 * This overloaded function takes in an array index, and it tries to get the array instance if
+	 * applicable, and passes the index to the object and returns a JSONData object.
+	 * @param        int           index         The index to access in the array
+	 * @return       JSONData  					 Object at index, null if not array
+	 */
+	public JSONData getArray ( int index ) {
+		// Get the array from if applicable
+		JSONArray array = this.getArray ();
+		// Make sure it isn't null
+		if ( array != null ) {
+			// Return the passed call to the array object
+			return array.get ( index );
+		}
+		// Otherwise return null
+		return null;
+	}
+
+	/**
 	 * This method returns a JSONObject if in fact the data type of the internally saved object is
 	 * an instance of JSONObject.  Otherwise we will return null.
 	 * @return       JSONObject                  The internally saved data casted as JSONObject
@@ -319,6 +337,24 @@ public class JSONData {
 		else {
 			return null;
 		}
+	}
+
+	/**
+	 * This overloaded function takes in an object key index, and it tries to get the object
+	 * instance if applicable, and passes the key to the object and returns a JSONData object.
+	 * @param        String        key           The key to access the object
+	 * @return       JSONData  					 Object at index, null if not object
+	 */
+	public JSONData getObject ( String key ) {
+		// Get the object from if applicable
+		JSONObject object = this.getObject ();
+		// Make sure it isn't null
+		if ( object != null ) {
+			// Return the passed call to the object
+			return object.get ( key );
+		}
+		// Otherwise return null
+		return null;
 	}
 
 	/**
