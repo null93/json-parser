@@ -1,12 +1,12 @@
 Testsuite: io.raffi.JSON.JSONDataTest
-Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 sec
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec
 
-Testcase: getStringTest took 0.014 sec
+Testcase: getStringTest took 0.006 sec
 Testcase: getArrayTest took 0 sec
-Testcase: isDoubleTest took 0.001 sec
-Testcase: getIntTest took 0.002 sec
+Testcase: isDoubleTest took 0 sec
+Testcase: getIntTest took 0 sec
 Testcase: isObjectTest took 0 sec
-Testcase: constructorDoubleTest took 0.001 sec
+Testcase: constructorDoubleTest took 0 sec
 Testcase: constructorObjectTest took 0 sec
 Testcase: isArrayTest took 0 sec
 Testcase: getBoolTest took 0 sec
@@ -14,7 +14,7 @@ Testcase: constructorIntTest took 0 sec
 Testcase: constructorNullTest took 0 sec
 Testcase: constructorArrayTest took 0 sec
 Testcase: getDoubleTest took 0 sec
-Testcase: isStringTest took 0 sec
+Testcase: isStringTest took 0.001 sec
 Testcase: toStringTest took 0 sec
 Testcase: getObjectTest took 0 sec
 Testcase: constructorStringTest took 0 sec

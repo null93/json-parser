@@ -115,7 +115,7 @@
 			author="true"
 			version="true"
 			use="true"
-			windowtitle="Test API">
+			windowtitle="Java JSON Parser - Rafael Grigorian">
 		</javadoc>
 	</target>
 	<!-- This is to prepare for the Github release -->
