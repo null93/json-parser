@@ -356,6 +356,7 @@ public class JSONDataTest {
 		assertTrue ( new JSONData ( new JSONObject ().put ( "a", 1 ) ).toString ().equals ("{\"a\":1}") );
 		assertTrue ( new JSONData ( new JSONArray () ).toString ().equals ("[]") );
 		assertTrue ( new JSONData ( new JSONArray ().add ( 1 ) ).toString ().equals ("[1]") );
+		assertTrue ( new JSONData ( "a	b" ).toString ().equals ("\"a\\tb\"") );
 		assertTrue ( this.array.toString ().equals ( this.json ) );
 	}
 

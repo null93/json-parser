@@ -439,8 +439,15 @@ public class JSONData {
 				// Cast and return as a string
 				return Double.toString ( ( double ) this.value );
 			case STRING:
+				// Cast the value
+				String value = ( String ) this.value;
+				// Replace all escape characters
+				value = value.replace ( "\n", "\\n" );
+				value = value.replace ( "\t", "\\t" );
+				value = value.replace ( "\r", "\\r" );
+				value = value.replace ( "\f", "\\f" );
 				// Cast and return as a string
-				return "\"" + ( String ) this.value + "\"";
+				return "\"" + value + "\"";
 			case NULL:
 				// Cast and return as a string
 				return "null";
