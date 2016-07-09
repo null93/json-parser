@@ -280,8 +280,15 @@ public class JSONData {
 	public String getString () {
 		// If the method is a string, we don't want to append the quotes around the string
 		if ( this.isString () ) {
+			// First get cast the value
+			String value = ( String ) this.value;
+			// Replace all escaped characters back
+			value = value.replace ( "\\n", "\n" );
+			value = value.replace ( "\\t", "\t" );
+			value = value.replace ( "\\r", "\r" );
+			value = value.replace ( "\\f", "\f" );
 			// Return casted value as string
-			return ( String ) this.value;
+			return value;
 		}
 		// Simply return the toString method
 		return this.toString ();
